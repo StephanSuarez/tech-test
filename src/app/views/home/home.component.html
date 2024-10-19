@@ -4,8 +4,8 @@
   </header>
 
   <div class="search-container">
-    <input type="text" placeholder="Describe el producto que estás buscando..." class="search-input">
-    <button class="search-button">
+    <input type="text" placeholder="Describe el producto que estás buscando..." class="search-input" [(ngModel)]="item">
+    <button class="search-button" (click)="search()" >
       <i class="fas fa-search"></i> Buscar
     </button>
   </div>
