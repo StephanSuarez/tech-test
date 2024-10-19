@@ -1,0 +1,23 @@
+<div class="product-card">
+  <div class="product-image">
+    <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" alt="Product Image">
+    <p class="product-code">A716</p>
+  </div>
+
+  <div class="product-info">
+    <h3>Factory wholesale new cartoon</h3>
+    <p>Total: <strong>$686</strong></p>
+    <div class="quantity-control">
+      <button (click)="decreaseQuantity()">-</button>
+      <input type="number" [(ngModel)]="quantity" />
+      <button (click)="increaseQuantity()">+</button>
+    </div>
+  </div>
+
+  <div class="price-info">
+    <p><strong>Precio sugerido</strong> <input type="number" [(ngModel)]="suggestedPrice" /></p>
+    <p>Costo por und.: <strong>$5</strong></p>
+    <p>Margen por und.: <strong>$1</strong></p>
+    <p>Porcentaje margen: <strong>22.45%</strong></p>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+/* Estilo del contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Altura mínima de la pantalla */
+  text-align: center;
+  background-color: white;
+  padding: 0 20px;
+}
+
+/* Logo y texto */
+.logo{
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 200px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+  margin: 20px 0;
+  display: flex;
+  position: relative;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  padding-right: 100px;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  background-color: #B1FE4E;
+  color: #000;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background-color: #a7ec4b;
+}
+
+.search-button i {
+  margin-right: 5px;
+}
+
+
+/* Etiquetas */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tags span {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.tags span:hover {
+  background-color: #ddd;
+}
+
+/* Pie de página */
+footer {
+  padding-bottom: 10px;
+}
+
+footer p {
+  color: #aaa;
+  font-size: 0.9rem;
+}

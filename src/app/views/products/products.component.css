@@ -1,0 +1,41 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Sección de filtro */
+.filter {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* Rango de precios */
+.range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.range input[type="range"] {
+  width: 150px;
+  margin: 0 10px;
+}
+
+.range input[type="number"] {
+  width: 50px;
+  text-align: center;
+}
+
+/* Opciones de radio */
+.option {
+  margin-top: 10px;
+}
+
+/* Productos */
+.products {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}

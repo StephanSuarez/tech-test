@@ -1,0 +1,25 @@
+.product-card {
+  border: 1px solid #ccc;
+  height: 500px;
+  padding: 20px;
+  text-align: start;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 1px 2px #00000042;
+}
+
+.product-card:hover{
+  box-shadow: 1px 5px 5px 5px #0000006e;
+  cursor: pointer;
+}
+
+.img-contain{
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.product-card img {
+  max-width: 100%;
+}

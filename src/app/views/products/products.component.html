@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+
+<section>
+  <div class="filter">
+    <h3>Rango de Precios</h3>
+    <div class="range">
+      <label for="priceMin">Precio Min:</label>
+      <input type="range" id="priceMin" min="0" max="1000" step="10">
+      <label for="priceMax">Precio Max:</label>
+      <input type="range" id="priceMax" min="0" max="1000" step="10">
+      <input type="number" id="priceMinInput" placeholder="1.00">
+      <input type="number" id="priceMaxInput" placeholder="10.00">
+    </div>
+    <div class="option">
+      <input type="radio" id="all" name="option" value="all">
+      <label for="all">Todos los precios</label><br>
+    </div>
+    <div class="option">
+      <input type="radio" id="less100" name="option" value="less100">
+      <label for="less100">Menos de $100</label><br>
+    </div>
+    <div class="option">
+      <input type="radio" id="less200" name="option" value="less200">
+      <label for="less200">Menos de $200</label><br>
+    </div>
+    <div class="option">
+      <input type="radio" id="less300" name="option" value="less300">
+      <label for="less300">Menos de $300</label><br>
+    </div>
+    <div class="option">
+      <input type="radio" id="less400" name="option" value="less400">
+      <label for="less400">Menos de $400</label><br>
+    </div>
+    <div class="option">
+      <input type="radio" id="less500" name="option" value="less500">
+      <label for="less500">Menos de $500</label><br>
+    </div>
+  </div>
+
+  <!-- Products Side -->
+  <div class="products">
+    <p>Cargando productos...</p>
+    <app-product-card></app-product-card>
+  </div>
+</section>
