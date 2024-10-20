@@ -1,15 +1,10 @@
 <div class="product-card">
   <div class="img-contain">
-    <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" alt="Mochila para perro">
+    <img [src]="product.images[0]" [alt]="product.name">
   </div>
-  <h2>Mochila para Perro</h2>
-  <div class="rating">
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
+  <div class="card-info">
+    <h3 class="titleh2">{{ product.name }}</h3>
+    <p class="big-price">${{ product.import_cost }} USD</p>
+    <p class="small-price">${{ product.import_cost }} cop</p>
   </div>
-  <p>$58.42 - $58.42 USD</p>
-  <p>$58.42 - $58.42 cop</p>
 </div>

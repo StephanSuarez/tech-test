@@ -1,16 +1,13 @@
 <app-navbar></app-navbar>
 
-<section>
+<section class="products-section">
   <div class="filter">
-    <h3>Rango de Precios</h3>
+    <h3>Rango de Precio</h3>
     <div class="range">
-      <label for="priceMin">Precio Min:</label>
-      <input type="range" id="priceMin" min="0" max="1000" step="10">
-      <label for="priceMax">Precio Max:</label>
-      <input type="range" id="priceMax" min="0" max="1000" step="10">
-      <input type="number" id="priceMinInput" placeholder="1.00">
-      <input type="number" id="priceMaxInput" placeholder="10.00">
+      <input type="number" idas="priceMinInput" placeholder="Precio min">
+      <input type="number" id="priceMaxInput" placeholder="Precio max">
     </div>
+    <hr>
     <div class="option">
       <input type="radio" id="all" name="option" value="all">
       <label for="all">Todos los precios</label><br>
@@ -39,7 +36,6 @@
 
   <!-- Products Side -->
   <div class="products">
-    <p>Cargando productos...</p>
-    <app-product-card></app-product-card>
+    <app-product-card *ngFor="let product of products" [product]="product" (click)="infoProduct(product)"></app-product-card>
   </div>
 </section>

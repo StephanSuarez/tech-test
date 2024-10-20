@@ -16,6 +16,13 @@ export class HomeComponent {
   item: string = '';
 
   search() {
-    this.router.navigate(['products'], { queryParams: { keyword: this.item } })
+    console.log(this.item)
+    if(this.item==''){
+    console.log('0--',this.item)
+
+      this.router.navigateByUrl('products');
+      return
+    }
+    this.router.navigate(['products'], { queryParams: { keyword: this.item } });
   }
 }
